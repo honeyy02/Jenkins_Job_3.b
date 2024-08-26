@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Run the Ansible playbook
-                    sh 'ansible-playbook /etc/ansible/playbooks/copyJartoS3.yml'
+                    sh 'ansible-playbook copyJartoS3.yml'
                 }
             }
         }
