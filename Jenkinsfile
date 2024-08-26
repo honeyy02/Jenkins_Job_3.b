@@ -8,7 +8,7 @@ pipeline {
                     withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws_credentials']]) {
                 // Run your Ansible playbook
                 sh '''
-                ansible-playbook copy_JarToS3.yml
+                ansible-playbook copyJarToS3.yml
                 '''
                 }   
 
